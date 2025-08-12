@@ -1,0 +1,107 @@
+/* 레이아웃 */
+.post-wrap {
+  max-width: 680px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+/* 제목 */
+.post-title {
+  margin: 0 0 12px;
+}
+
+/* 입력 영역 */
+.post-controls {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.post-input,
+.post-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* 버튼 모음 */
+.post-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* 상태 텍스트 */
+.post-info { color: #334155; }
+.post-error { color: tomato; }
+
+/* ✅ 리스트(ul)와 아이템(li) */
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.post-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fff;
+}
+
+.post-item-title {
+  margin: 0 0 6px;
+}
+
+.post-item-body {
+  margin: 0;
+  color: #475569;
+}
+
+/* 아이템 내 액션 */
+.post-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* 버튼 스타일(공통/변형) */
+.btn {
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb;
+  background: #eef2ff;
+  color: #3730a3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-danger {
+  padding: 8px 12px;
+  border: 1px solid #fecaca;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 포커스 표시 */
+.post-input:focus-visible,
+.post-textarea:focus-visible,
+.btn:focus-visible,
+.btn-secondary:focus-visible,
+.btn-danger:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}

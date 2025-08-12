@@ -7,7 +7,7 @@ const PostForm = () => {
   const fetchPosts = async () => {
     try {
       const res = await axios.get(`${API}/api/posts`)
-      console.log(res)
+      // console.log(res)
       setPosts(res.data)
     } catch (error) {
       console.log('데이터 불러오기 실패', error)

@@ -1,0 +1,117 @@
+/* 레이아웃 */
+.post-wrap {
+  max-width: 680px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+/* 제목 */
+.post-title {
+  margin: 0 0 12px;
+}
+
+/* 입력 영역 */
+.post-controls {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.post-input,
+.post-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+}
+
+/* 버튼 모음 (현재 JSX에서는 .post-buttos 오타 주의) */
+.post-buttos {
+  display: flex;
+  gap: 8px;
+}
+
+/* 상태 텍스트 */
+.post-info { color: #334155; }
+.post-error { color: tomato; }
+
+/* 리스트(ul) */
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 아이템(li) */
+.post-list li {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  margin-bottom: 10px; /* 목록 간 간격 */
+  transition: background-color 0.2s ease;
+}
+
+/* 홀수/짝수 배경 구분 */
+.post-list li:nth-child(odd) {
+  background-color: #f9fafb;
+}
+
+/* hover 시 효과 */
+.post-list li:hover {
+  background-color: #f3f4f6;
+}
+
+/* 제목/내용 */
+.post-item-title {
+  margin: 0 0 6px;
+  font-weight: bold;
+}
+
+.post-item-content {
+  margin: 0;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* 액션 버튼 영역 */
+.post-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* 버튼 스타일 */
+.btn,
+.btn-secondary,
+.btn-danger {
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+}
+
+.btn-secondary {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.btn-danger {
+  border-color: #fecaca;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* 포커스 표시 */
+.post-input:focus-visible,
+.post-textarea:focus-visible,
+.btn:focus-visible,
+.btn-secondary:focus-visible,
+.btn-danger:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}

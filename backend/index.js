@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URI)
 const postRoutes = require("./routes/postRoutes")
 app.use("/api/posts",postRoutes)
 
-
+app.get('/', (req, res) => res.send('OK'));
 
 app.listen(PORT,()=>{
   console.log('서버 실행중')

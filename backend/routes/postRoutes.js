@@ -51,7 +51,7 @@ router.delete("/:id", async (req, res) => {
 
     const deleted = await Post.findByIdAndDelete(req.params.id)
     if (!deleted) return res.status(404).json({ message: "삭제 할 글 없음" })
-    res.status(201).json({message:"삭제게시글",post: deleted,})
+    res.status(201).json({ message: "삭제게시글", post: deleted, })
 
   } catch (error) {
     res.status(400).json({ error: "작성 실패", message: error.message })
